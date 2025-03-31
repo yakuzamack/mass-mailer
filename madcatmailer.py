@@ -594,11 +594,7 @@ loop_times = []
 loop_time = 0
 got_updates = False
 
-try:
-	window_width = os.get_terminal_size().columns-40
-except (OSError, AttributeError):
-	window_width = 80  # Default fallback width
-
+window_width = os.get_terminal_size().columns-40
 resolver_obj = dns.resolver.Resolver()
 inbox_test_id = get_rand_str(8)
 
