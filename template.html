@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject_line}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .content {
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .main-body {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #666;
+        }
+        .cta {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .closing {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #666;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            font-size: 12px;
+            color: #666;
+        }
+        .support {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .domain-info {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hidden tracking pixel -->
+    <img src="{{tracking_pixel}}" alt="" width="1" height="1" style="display:none">
+    
+    <div class="container">
+        <div class="header">
+            <img src="{{companyLogoUrl}}" alt="{{companyName}}" class="logo">
+        </div>
+        
+        <div class="content">
+            <h1>{{subject_line}}</h1>
+            <p>{{greeting}}</p>
+            <div class="main-body">
+                <p>{{main_body_part1}}</p>
+                <p>{{main_body_part2}}</p>
+            </div>
+            <div class="domain-info">
+                <p>Domain: {{email_host}}</p>
+            </div>
+            <div class="cta">
+                <a href="{{url}}" class="button">{{cta}}</a>
+            </div>
+            <p class="closing">{{closing}}</p>
+            <p class="support">If you have any questions, please contact us at <a href="mailto:{{companySupportEmail}}">{{companySupportEmail}}</a></p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; {{currentYear}} {{companyName}}. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
+

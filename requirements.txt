@@ -1,0 +1,4 @@
+psutil>=5.9.0
+dnspython>=2.3.0
+requests>=2.31.0
+pyOpenSSL>=23.2.0 

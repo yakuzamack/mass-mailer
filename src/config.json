@@ -1,0 +1,39 @@
+{
+    "smtp": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "username": "your-email@gmail.com",
+        "password": "your-app-password",
+        "use_tls": true
+    },
+    "email": {
+        "from_name": "Your Name",
+        "from_email": "your-email@gmail.com",
+        "reply_to": "your-email@gmail.com",
+        "max_retries": 3,
+        "retry_delay": 5
+    },
+    "company": {
+        "name": "Your Company",
+        "domain": "yourcompany.com",
+        "support_email": "support@yourcompany.com",
+        "address": "123 Company St, Business City, 12345"
+    },
+    "template": {
+        "cohere_api_key": "your-cohere-api-key",
+        "max_retries": 3,
+        "retry_delay": 5,
+        "timeout": 30
+    },
+    "proxy": {
+        "enabled": false,
+        "rotation_interval": 300,
+        "test_url": "http://httpbin.org/ip",
+        "timeout": 10
+    },
+    "performance": {
+        "rotation_threshold": 1000,
+        "min_open_rate": 0.2,
+        "min_click_through_rate": 0.1
+    }
+} 
